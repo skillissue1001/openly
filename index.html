@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Openly — Reputation Management Without the Contract Trap</title>
   <meta name="description" content="Monitor and respond to Google, Yelp, and Facebook reviews. $49/mo. No contracts. Cancel anytime.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -425,24 +426,13 @@
       line-height: 1.65;
     }
 
-    /* PROOF SECTION — DARK */
+    /* PROOF SECTION */
     .proof {
-      background: var(--bg-dark);
-      color: #fff;
+      background: var(--accent-bg);
+      color: var(--text);
       text-align: center;
       position: relative;
       overflow: hidden;
-    }
-    .proof::before {
-      content: '';
-      position: absolute;
-      width: 800px;
-      height: 800px;
-      background: radial-gradient(circle, rgba(5,150,105,0.15) 0%, transparent 70%);
-      top: -300px;
-      left: 50%;
-      transform: translateX(-50%);
-      pointer-events: none;
     }
     /* PRODUCT PREVIEW */
     .preview { background: var(--bg-white); }
@@ -478,9 +468,9 @@
     }
 
     .proof .section-inner { position: relative; z-index: 1; }
-    .proof .section-label { color: #34d399; }
-    .proof .section-title { color: #fff; }
-    .proof .section-subtitle { color: #94a3b8; margin: 0 auto; }
+    .proof .section-label { color: var(--accent); }
+    .proof .section-title { color: var(--text); }
+    .proof .section-subtitle { color: var(--text-secondary); margin: 0 auto; }
     .proof-stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -489,8 +479,8 @@
     }
     .proof-stat {
       padding: 32px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: var(--bg-white);
+      border: 1px solid var(--border);
       border-radius: var(--radius);
     }
     .proof-stat h3 {
@@ -499,14 +489,14 @@
       letter-spacing: -3px;
       line-height: 1;
       margin-bottom: 8px;
-      background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+      background: linear-gradient(135deg, #059669 0%, #10b981 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
     .proof-stat p {
       font-size: 14px;
-      color: #94a3b8;
+      color: var(--text-secondary);
       line-height: 1.5;
     }
 
@@ -944,17 +934,17 @@
   <!-- PRODUCT PREVIEW -->
   <section class="preview">
     <div class="section-inner" style="text-align: center;">
-      <p class="section-label reveal">Sneak peek</p>
+      <p class="section-label reveal">See it in action</p>
       <h2 class="section-title reveal reveal-delay-1">One dashboard.<br>Every review.</h2>
       <p class="section-subtitle reveal reveal-delay-2" style="margin: 0 auto;">AI drafts responses in seconds. You review and send with one click. No more switching between Google, Yelp, and Facebook.</p>
       <div class="preview-mockup reveal reveal-delay-3">
         <img src="assets/dashboard-mockup.png" alt="Openly dashboard showing review monitoring, AI-generated responses, and analytics" loading="lazy">
       </div>
-      <p class="preview-note reveal reveal-delay-4">Early preview &mdash; launching soon</p>
+      <p class="preview-note reveal reveal-delay-4">Launching soon</p>
     </div>
   </section>
 
-  <!-- SOCIAL PROOF — DARK -->
+  <!-- SOCIAL PROOF -->
   <section class="proof">
     <div class="section-inner">
       <p class="section-label reveal">Why this matters</p>
