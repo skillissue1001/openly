@@ -444,6 +444,39 @@
       transform: translateX(-50%);
       pointer-events: none;
     }
+    /* PRODUCT PREVIEW */
+    .preview { background: var(--bg-white); }
+    .preview-mockup {
+      margin-top: 48px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.04);
+      position: relative;
+    }
+    .preview-mockup img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .preview-mockup::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: linear-gradient(transparent, var(--bg-white));
+      pointer-events: none;
+    }
+    .preview-note {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
     .proof .section-inner { position: relative; z-index: 1; }
     .proof .section-label { color: #34d399; }
     .proof .section-title { color: #fff; }
@@ -905,6 +938,19 @@
           <p>Google, Yelp, Facebook &mdash; every review in one feed. Get notified instantly. Respond from one place. See your ratings trend over time. No switching between tabs.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT PREVIEW -->
+  <section class="preview">
+    <div class="section-inner" style="text-align: center;">
+      <p class="section-label reveal">Sneak peek</p>
+      <h2 class="section-title reveal reveal-delay-1">One dashboard.<br>Every review.</h2>
+      <p class="section-subtitle reveal reveal-delay-2" style="margin: 0 auto;">AI drafts responses in seconds. You review and send with one click. No more switching between Google, Yelp, and Facebook.</p>
+      <div class="preview-mockup reveal reveal-delay-3">
+        <img src="assets/dashboard-mockup.png" alt="Openly dashboard showing review monitoring, AI-generated responses, and analytics" loading="lazy">
+      </div>
+      <p class="preview-note reveal reveal-delay-4">Early preview &mdash; launching soon</p>
     </div>
   </section>
 
